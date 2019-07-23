@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "VisNER": {
+    "Highlighter": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/VisNER",
+            "outputPath": "dist/Highlighter",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/minireset.css/minireset.css",
+              "src/styles.css",
+              "node_modules/igniteui-angular/styles/igniteui-angular.css",
+              "src/scripts/jquery-ui-1.12.1/jquery-ui.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/jquery/dist/jquery.js", "src/scripts/jquery-ui-1.12.1/jquery-ui.js"]
           },
           "configurations": {
             "production": {
@@ -58,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "VisNER:build"
+            "browserTarget": "Highlighter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "VisNER:build:production"
+              "browserTarget": "Highlighter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "VisNER:build"
+            "browserTarget": "Highlighter:build"
           }
         },
         "test": {
@@ -84,7 +87,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/igniteui-angular/styles/igniteui-angular.css"
             ],
             "scripts": []
           }
@@ -106,15 +110,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "VisNER:serve"
+            "devServerTarget": "Highlighter:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "VisNER:serve:production"
+              "devServerTarget": "Highlighter:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "VisNER"
+    }
+  },
+  "defaultProject": "Highlighter"
 }

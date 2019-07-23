@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+.person {
+  background-color: #aadb51;
+}
+
+.organisation {
+  background-color: #ffe05d;
+}
+
+.location {
+  background-color: #d2ceff;
+}
+
+.miscellaneous {
+  background-color: lightblue;
+}
+
+.highlighted {
+  text-transform: capitalize;
+}
+
+.tooltip-bg {
+  font-family: 'Helvetica', sans-serif;
+  color: #454545;
+  border-radius: 5px;
+  margin-top: -5px ;
+  margin-bottom: -5px ;
+}

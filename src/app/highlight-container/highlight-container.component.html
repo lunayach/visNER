@@ -1,0 +1,43 @@
+<div id="description">
+  <b>Named Entity Recognition (<b>NER</b>) on uncased noisy data (demo): <br></b>
+  <b>Current Method:</b> [True-casing using Part of Speech] => [Entity extraction using Flair (SOTA)] <br>
+  <b>About Flair:</b> Labels Sequences (in our case, NER) using contextual string embeddings. The main contribution of
+  the work is the embedding, otherwise they use BiLSTM-CRF sequence <br> tagging
+  module.
+</div>
+<br>
+
+<div id="chips">
+  <b>Reference</b>:
+  &nbsp;
+  <igx-chip color="#aadb51">
+    <span>Person</span>
+  </igx-chip>
+  &nbsp;
+  <igx-chip color="#ffe05d">
+    <span>Organisation</span>
+  </igx-chip>
+  &nbsp;
+  <igx-chip color="#d2ceff">
+    <span>Location</span>
+  </igx-chip>
+  &nbsp;
+  <igx-chip color="lightblue">
+    <span>Miscellaneous</span>
+  </igx-chip>
+</div>
+<div style="text-align: center">
+  <igx-input-group type="box" class="input-group">
+    <label for="query"></label><textarea id="query" igxInput placeholder="Enter raw-uncased text" autocomplete="off"
+                                         [(ngModel)]="queryText"></textarea>
+  </igx-input-group>
+</div>
+<br>
+<div style="text-align: center">
+  <button igxButton="outlined" igxButtonColor="black" igxButtonBackground="orange" (buttonClick)="manageHighlight()"
+          style="font-family: 'Helvetica', sans-serif">Extract Entities
+  </button>
+</div>
+<div id="output-text" class="container">
+</div>
+

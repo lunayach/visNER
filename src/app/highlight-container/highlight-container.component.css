@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+}
+
+.search-text {
+  margin: 1em;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-group {
+  width: 80%;
+  min-width: 370px;
+  margin-bottom: .5em;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Helvetica', sans-serif;
+}
+
+hr {
+  color: #ccc;
+}
+
+.description {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.caseSensitiveIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, .54);
+}
+
+.searchButtons {
+  margin-left: 5px;
+}
+
+p {
+  line-height: 27px;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+.container {
+  font-size: 1.2em;
+  width: 80%;
+  min-width: 370px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Helvetica', sans-serif;
+}
+
+#query {
+  font-size: 1.2em;
+}
+
+#chips {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.1em;
+  margin-left: 190px;
+  display: inline;
+}
+
+#description {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.1em;
+  margin-left: 190px;
+}
