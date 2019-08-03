@@ -1,31 +1,31 @@
-![ov_screenshot](https://user-images.githubusercontent.com/21227893/62409449-fcd55d80-b5f4-11e9-81bf-bc5cc4450b40.png)
-
 ![logo](https://user-images.githubusercontent.com/21227893/62409450-0363d500-b5f5-11e9-952b-ccb30015c823.png)
 
-# Highlighter
+In the wild extraction of entities that are found using **Flair** and displayed using a very elegant front-end. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
+### Screenshot
 
-## Development server
+<img src="https://user-images.githubusercontent.com/21227893/62409449-fcd55d80-b5f4-11e9-81bf-bc5cc4450b40.png" width="600">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Setting it up
 
-## Code scaffolding
+#### Extractor (The backend)
+- Change the directory to ``Extractor``.
+- Open a terminal in the directory and do ``pip install -r requirements.txt``. (Recommended in a Python virtual environment).
+- That's it, do ``python run.py ``. (By default, it opens the Flask server in the 8500. To run in other port, do ``python run.py --port <PORT_NUMBER>`` )
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Angular Frontend
+- Open the terminal in the main directory and do ``npm install``.
+- Now do, ```ng serve``` in the terminal in the same directory.
+- Navigate to `http://localhost:4200/`. visNER is now live there.
 
-## Build
+#### Credits
+[Flair](https://github.com/zalandoresearch/flair)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#### Issues
+The project is still in the very early stage. For any feature requests, errors, documentation requests or suggestions, please feel free 
+to open the issues in the repository.
 
-## Running unit tests
+#### Contact
+[Mail](mailto:mayankl@iitk.ac.in) [Twitter](https://twitter.com/mayank_lunayach)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
