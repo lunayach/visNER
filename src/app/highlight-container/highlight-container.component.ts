@@ -1,6 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NerService} from '../ner.service';
-import {OnInit} from '@angular/core';
 
 declare var $: any;
 
@@ -12,19 +11,14 @@ declare var $: any;
 })
 export class HighlightContainerComponent implements OnInit {
 
+  public queryText = '';
+  private tagMap = {PER: 'person', ORG: 'organisation', LOC: 'location', MISC: 'miscellaneous'};
+
   constructor(private nerService: NerService) {
   }
 
   ngOnInit(): void {
     $(document).tooltip({classes: {'ui-tooltip': 'tooltip-bg', 'ui-tooltip-content': 'tooltip-bg'}});
-  }
-
-  public queryText = '';
-
-  private tagMap = {PER: 'person', ORG: 'organisation', LOC: 'location', MISC: 'miscellaneous'};
-
-  private tagClass(tag: string) {
-    return this.tagMap[tag];
   }
 
   public highlightEntities(startPositions: number[], endPositions: number[], scores: number[], tags: string[], inputText: string) {
@@ -116,5 +110,9 @@ export class HighlightContainerComponent implements OnInit {
       outputComponent.innerHTML = '';
       outputComponent.appendChild(documentFragment);
     });
+  }
+
+  private tagClass(tag: string) {
+    return this.tagMap[tag];
   }
 }
