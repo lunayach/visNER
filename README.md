@@ -1,3 +1,7 @@
+![ov_screenshot](https://user-images.githubusercontent.com/21227893/62409449-fcd55d80-b5f4-11e9-81bf-bc5cc4450b40.png)
+
+![logo](https://user-images.githubusercontent.com/21227893/62409450-0363d500-b5f5-11e9-952b-ccb30015c823.png)
+
 # Highlighter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
