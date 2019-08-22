@@ -23,7 +23,7 @@ In the wild extraction of entities that are found using **Flair** and displayed 
 
 #### Issues
 The project is still in the very early stage. For any feature requests, errors, documentation requests or suggestions, please feel free 
-to open the issues in the repository.
+to open issues in the repository.
 
 #### Contact
 [Mail](mailto:mayankl@iitk.ac.in) [Twitter](https://twitter.com/mayank_lunayach)
