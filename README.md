@@ -1,4 +1,4 @@
-![logo](https://user-images.githubusercontent.com/21227893/62409450-0363d500-b5f5-11e9-952b-ccb30015c823.png)
+# visNER
 
 In the wild extraction of entities that are found using **Flair** and displayed using a very elegant front-end. 
 
