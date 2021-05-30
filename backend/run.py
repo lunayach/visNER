@@ -47,4 +47,4 @@ if __name__ == "__main__":
                         type=int,
                         help="Port to be used for the Flask Application.")
     args = parser.parse_args()
-    app.run(port=int(args.port))
+    app.run(host="0.0.0.0", port=int(args.port))
