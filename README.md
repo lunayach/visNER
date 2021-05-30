@@ -6,17 +6,13 @@ In the wild extraction of entities that are found using **Flair** and displayed 
 
 <img src="https://user-images.githubusercontent.com/21227893/62409449-fcd55d80-b5f4-11e9-81bf-bc5cc4450b40.png" width="600">
 
-### Setting it up
-
-#### Extractor (The backend)
-- Change the directory to ``Extractor``.
-- Open a terminal in the directory and do ``pip install -r requirements.txt``. (Recommended in a Python virtual environment).
-- That's it, do ``python run.py ``. (By default, it opens the Flask server in the 8500. To run in other port, do ``python run.py --port <PORT_NUMBER>`` )
-
-#### Angular Frontend
-- Open the terminal in the main directory and do ``npm install``.
-- Now do, ```ng serve``` in the terminal in the same directory.
-- Navigate to `http://localhost:4200/`. visNER is now live there.
+### Setting it up in docker
+In the directory, run:
+```
+  docker-compose build
+  docker-compose up
+```
+Then, open https:localhost/4200 to have access to the interface.
 
 #### Credits
 [Flair](https://github.com/zalandoresearch/flair)
