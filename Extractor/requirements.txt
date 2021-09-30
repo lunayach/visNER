@@ -13,7 +13,7 @@ Deprecated==1.2.6
 docutils==0.14
 flair==0.4.2
 Flask==1.1.1
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 future==0.17.1
 gensim==3.8.0
 hyperopt==0.1.2
