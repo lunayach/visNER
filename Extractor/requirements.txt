@@ -20,7 +20,7 @@ hyperopt==0.1.2
 idna==2.8
 importlib-metadata==0.18
 itsdangerous==1.1.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 jmespath==0.9.4
 joblib==0.13.2
 kiwisolver==1.1.0
